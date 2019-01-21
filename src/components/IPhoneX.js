@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import '../css/devices.css';
-import '../css/fix-layout.css';
+import '../devices.css';
+import '../fix-layout.css';
 
 export default class IPhoneX extends Component {
 	render(){
