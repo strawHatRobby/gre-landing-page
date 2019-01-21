@@ -8,9 +8,10 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-      <div className="Container" style={{display: "flex",flex:1, justifyContent: 'center', alignItems: 'center'}}>
+      <div className="Container">
+        <h1 style={{color:'#fff'}}>Angrezi.life</h1>
         <IPhoneX/>
-        
+
         </div>
         <Footer/>
       </div>
