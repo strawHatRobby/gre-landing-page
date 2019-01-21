@@ -4,8 +4,11 @@
   "private": true,
   "homepage": "https://strawHatRobby.github.io/gre-landing-page",
   "dependencies": {
+    "babel-loader": "^8.0.5",
     "react": "^16.7.0",
-    "react-dom": "^16.7.0"
+    "react-bootstrap": "^0.32.4",
+    "react-dom": "^16.7.0",
+    "reactstrap": "^7.1.0"
   },
   "devDependencies": {
     "react-scripts": "2.1.3"
