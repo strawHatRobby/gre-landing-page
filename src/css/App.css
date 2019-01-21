@@ -1,6 +1,8 @@
 .App {
   text-align: center;
-  background-image: linear-gradient(to right, #6E41C3 , #9B51B5);;
+  background-image: linear-gradient(to right, #6E41C3 , #9B51B5);
+  height: 100%;
+  width: 100%;
 }
 
 .App-logo {
@@ -26,6 +28,7 @@
 .Container {
   padding-top: 2%;
   padding-right: 5%;
+  padding-bottom: 10%;
 }
 
 @keyframes App-logo-spin {

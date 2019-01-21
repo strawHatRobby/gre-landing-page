@@ -13,19 +13,19 @@ class App extends Component {
       <Grid>
         <Row className="show-grid">
         <Col xs={12} md={8} >
-        <header style={{flex:'1',textAlign:'center', justifyContent:'center'}}>
-        <h1 style={{ color:'#fff', fontSize: '3em', height:'70px', width:'200px', fontFamily:'YellowTail'}}>Angrezi.life</h1>
+        <header style={{flex:1,textAlign:'center', justifyContent:'center'}}>
+        <h1 style={{ paddingLeft: "20%", color:'#fff', fontSize: '3em', height:'70px', width:'200px', fontFamily:'YellowTail'}}>Angrezi.life</h1>
         </header>
         <Row className="show-grid">
         <Col>
           <h2 style={{color:'#fff', fontSize: '3em',  fontFamily:'Nunito Sans'}}>Changing the way you learn</h2 >
-          <p style={{color: '#E3E3E3', fontFamily:'Open Sans'}}><i>Introducing a cool new way to build vocabulary, master punctuations, speed up 
+          <p style={{paddingLeft: '1.5%',color: '#E3E3E3', fontFamily:'Open Sans'}}><i>Introducing a cool new way to build vocabulary, master punctuations, speed up 
 comprehension and much more…</i></p>
         <br/>
         <h3 style={{color:'#E3E3E3', fontSize: '1.5em',  fontFamily:'Open Sans'}}><b>The GRE app you always wished for!</b></h3 >
         <div class="SignUp" style={{paddingTop:"5%", paddingBottom:"13%"}}>
         <form>
-          <input type="email" placeholder="Register for an early access"  style={{padding: '1%',  paddingLeft: '4%', width: "72%", borderRadius: '90px', boxShadow: '0 0 100px #EC05FF'}}></input>
+          <input type="email" placeholder="Register for an early access"  style={{padding: '1%',  paddingLeft: '4%', width: "70%", borderRadius: '90px', boxShadow: '0 0 100px #EC05FF'}}></input>
           <button type="submit" style={{left:"71.75%", padding: '1%', border: 'none', position: 'absolute',  paddingBottom: '2.1%', paddingLeft: '4%',paddingRight: '4%', backgroundColor: "#EC05FF", color:"#fff", borderRadius: '100px', boxShadow: '0 0 10px #a5a5a5'}}>Submit</button>
         </form>
         </div>
