@@ -7,7 +7,6 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1>This page is not working</h1>
         <IPhoneX/>
       </div>
     );
