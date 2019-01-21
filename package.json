@@ -2,6 +2,7 @@
   "name": "gre-landing-page",
   "version": "0.1.0",
   "private": true,
+  "hompage": "https://strawHatRobby.github.io/gre-landing-page",
   "dependencies": {
     "react": "^16.7.0",
     "react-dom": "^16.7.0"
