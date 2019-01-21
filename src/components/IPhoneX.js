@@ -18,7 +18,7 @@ export default class IPhoneX extends Component {
                 
                 <div className="device-content animate-bg" aria-labelledby="Drop an image here." ondrop="drop(event)" ondragover="allowDrop(event)">
                   
-                  <iframe className="dev-content animate-bg" height="650" 
+                  <iframe title="iphoneXWindow" className="dev-content animate-bg" height="650" 
   src="https://strawhatrobby.github.io/chatty/" scrolling="yes" style={{background:'#26282b',paddingTop:'20px'}} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
               </div>
