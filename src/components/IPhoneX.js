@@ -9,10 +9,10 @@ export default class IPhoneX extends Component {
             <div className="device device-iphone-x animate">
               <div className="device-frame">
                 
-                <div className="device-content animate-bg" aria-labelledby="Drop an image here." ondrop="drop(event)" ondragover="allowDrop(event)">
+                <div className="device-content animate-bg" aria-labelledby="Drop an image here.">
                   
                   <iframe title="iphoneXWindow" className="dev-content animate-bg" height="663" 
-  src="https://strawhatrobby.github.io/chatty" scrolling="yes" style={{background:'#fff', paddingTop:'5.6%'}} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  src="https://strawhatrobby.github.io/chatty" scrolling="yes" style={{background:'#fff', paddingTop:'5.6%'}} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                 </div>
               </div>
               <div className="device-stripe"></div>

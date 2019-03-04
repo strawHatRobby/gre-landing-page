@@ -5,10 +5,15 @@
   "homepage": "https://strawHatRobby.github.io/gre-landing-page",
   "dependencies": {
     "babel-loader": "^8.0.5",
+    "body-parser": "^1.18.3",
+    "isomorphic-fetch": "^2.2.1",
     "react": "^16.7.0",
     "react-bootstrap": "^0.32.4",
     "react-dom": "^16.7.0",
-    "reactstrap": "^7.1.0"
+    "react-ga": "^2.5.7",
+    "react-nprogress": "^0.1.6",
+    "reactstrap": "^7.1.0",
+    "request": "^2.88.0"
   },
   "devDependencies": {
     "react-scripts": "2.1.3"

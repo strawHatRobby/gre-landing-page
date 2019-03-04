@@ -7,18 +7,18 @@ export default class Footer extends Component {
             <footer>
 
 
-    <div class="container" style={{display:'flex', justifyContent: 'space-between', flexDirection:'row'}}>
+    <div className="container" style={{display:'flex', justifyContent: 'space-between', flexDirection:'row'}}>
 
       
-      <div class="row">
+      <div className="row">
 
         
-        <div class="col-md-12 py-5">
-          <div class="mb-5 flex-center">
+        <div className="col-md-12 py-5">
+          <div className="mb-5 flex-center">
 
             
-            {/* <a class="fb-ic">
-              <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+            {/* <a className="fb-ic">
+              <i className="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
             </a>
             
             <a class="tw-ic">
@@ -51,7 +51,7 @@ export default class Footer extends Component {
     
 
     
-    <div class="footer-copyright text-center py-3">© 2019 Copyright:
+    <div className="footer-copyright text-center py-3">© 2019 Copyright:
       <a href="https://strawHatRobby.github.io/gre-landing-page"> angerzi.life</a>
     </div>
     

@@ -4,8 +4,50 @@ import Footer from './components/Footer';
 import logo from './logo.svg';
 import './css/App.css';
 import { Button, Grid, Row, Col, PageHeader } from 'react-bootstrap';
+import NProgress from 'react-nprogress';
+import ReactGA from 'react-ga';
+
+ReactGA.initialize('UA-123791717-1');
+ReactGA.pageview('/');
 
 class App extends Component {
+  state = {
+    input: ''
+  }
+
+
+
+  subscribeToNewsLetter = (text) => {
+    setTimeout(console.log("Subscribed by " + text),4000);
+    ReactGA.event({
+  category: 'User',
+  action: 'Subscribed to updates'
+});
+  }
+  handleTextChange = (event) => {
+    console.log(event.target.value);
+    this.setState({input: event.target.value})
+  }
+  subscribeToMailChimp = async (event) => {
+    event.preventDefault();
+    NProgress.start();
+    try {
+      await this.subscribeToNewsLetter(this.state.input);
+      if(this.state.input){
+        this.setState({
+          input: ''
+        })
+        alert("Thank you!\n We'll be getting in touch with you soon!")
+      }
+      NProgress.end();
+    }
+    catch(err){
+      alert(err);
+    }
+
+
+
+  }
   render() {
     return (
       <div className="App">
@@ -19,19 +61,19 @@ class App extends Component {
         <Row className="show-grid">
         <Col>
           <h2 style={{color:'#fff', fontSize: '3em',  fontFamily:'Nunito Sans'}}>Changing the way you learn</h2 >
-          <p style={{paddingLeft: '1.5%',color: '#E3E3E3', fontFamily:'Open Sans'}}><i>Introducing a cool new way to build vocabulary, master punctuations, speed up 
+          <p style={{paddingLeft: '1.5%',color: '#E3E3E3', fontFamily:'Open Sans'}}><i>Introducing a cool new way to build vocabulary, master punctuations, speed up
 comprehension and much more…</i></p>
         <br/>
         <h3 style={{color:'#E3E3E3', fontSize: '1.5em',  fontFamily:'Open Sans'}}><b>The GRE app you always wished for!</b></h3 >
-        <div class="SignUp" style={{paddingTop:"5%", paddingBottom:"13%"}}>
-        <form>
-          <input type="email" placeholder="Register for an early access"  style={{padding: '1%',  paddingLeft: '4%', width: "70%", borderRadius: '90px', boxShadow: '0 0 100px #EC05FF'}}></input>
+        <div className="SignUp" style={{paddingTop:"5%", paddingBottom:"13%"}}>
+        <form onSubmit={this.subscribeToMailChimp} >
+          <input type="email" placeholder="Register for an early access"  style={{padding: '1%',  paddingLeft: '4%', width: "70%", borderRadius: '90px', boxShadow: '0 0 100px #EC05FF'}} value={this.state.input} onChange={this.handleTextChange}></input>
           <button type="submit" style={{left:"71.75%", padding: '1%', border: 'none', position: 'absolute',  paddingBottom: '2.1%', paddingLeft: '4%',paddingRight: '4%', backgroundColor: "#EC05FF", color:"#fff", borderRadius: '100px', boxShadow: '0 0 10px #a5a5a5'}}>Submit</button>
         </form>
         </div>
 
 
-        
+
         </Col>
         <Row>
           <Col>
@@ -48,10 +90,10 @@ comprehension and much more…</i></p>
         <IPhoneX/>
         </Col>
         </Row>
-        
+
       </Grid>
-      
-        
+
+
 
 </div>
         <Footer/>
